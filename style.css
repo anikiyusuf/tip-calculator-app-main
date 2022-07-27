@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+body{
+    
+background-color:  hsl(185,41%,84%);
+}
+.main{
+    margin: auto;
+    width:40rem;
+    background-color:hsl(0, 0%, 100%);
+    margin-top:4rem;
+    display: flex;
+    height: 20rem;
+    border-radius: 1rem;
+}
+.card1{
+    padding:1rem;
+}
+.tip{
+    background-color:hsl(183, 100%, 15%);
+    width: 18rem;
+    height: 17rem;
+    margin-left: 4rem ;
+    margin-top:1.5rem;
+    border-radius: 1rem;
+
+}
