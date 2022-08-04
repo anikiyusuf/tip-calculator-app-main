@@ -1,31 +1,419 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
+:root{
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    }
+    html,body{
+      width:100%;
+      height: 100%;
+    }
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+
+    body{   
+    background-color:var(--Light-grayish-cyan);
 }
-body{
+
+.main-content{
+    display:flex;
+    height:700px;
+    align-items:center;
+    justify-content: center;
+}
+.main-content-logo{
+    display:flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.container-content{
+    display:flex;
+    background-color: var(--White);
+    width:45rem;
+    height:23em;
+    border-radius:1rem;
+}
+.bill_section{
+   margin-top: 2rem;
+   margin-left:2rem;
+}
+
+.bill_section > h1 {
+     color:var(--Grayish-cyan);
+     font-size: 15px;
+     font-weight: 700;
     
-background-color:  hsl(185,41%,84%);
+    
 }
-.main{
-    margin: auto;
-    width:40rem;
-    background-color:hsl(0, 0%, 100%);
-    margin-top:4rem;
+.bill-dollar{
+    position:relative;
+    color:var(--Very-dark-cyan);
+    
+   
+} 
+
+ #bill_input{
+    background-color: var(--Very-light-grayish-cyan); 
+    color:var(--Very-dark-cyan);
+    border:none;
+    text-align: right;
+     padding:0.4rem;
+     margin-top:0.3rem;
+     
+
+    font-size: 1.5rem;
+    font-family: 700;
+    border-radius: 0.5rem;
+    
+    
+}
+#bill_input[type="number"]{
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#bill_input::placeholder  {
+     color:var(--Grayish-cyan);
+}
+
+
+/* select tip */
+.select-tip{
+   margin-top: 2rem;
+   margin-left:2rem; 
+}
+.select-tip > h2{
+    color:var(--Dark-grayish-cyan);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.select-tip-btn{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap:0.7rem;
+} 
+
+
+.fivePercent , .tenPercent , .fiftyPercent, .fifteenPercent , .twenty-fivePercent {
+    background-color: var(--Very-dark-cyan);
+    border: none;
+    color:var(--White);
+    border-radius: 0.3rem;
+    padding:1em; 
+}
+
+ #customEl{
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    color:var(--Very-dark-cyan);
+    border-radius: .3rem;
+    padding:1em; 
+    width:5.4rem;
+ }  
+ .fivePercent:hover , .tenPercent:hover , .fiftyPercent:hover, .fifteenPercent:hover , .twenty-fivePercent:hover  {
+     background-color: var(--Light-grayish-cyan);
+color:var(--Very-dark-cyan);
+ }
+
+
+/*  People Content  */
+ .people-content{
+    margin-top: 2rem;
+    margin-left:2rem; 
+}
+
+.people-content > h1{
+    color:var(--Dark-grayish-cyan);
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+
+#people_input{
+    background-color: var(--Very-light-grayish-cyan); 
+    color:var(--Very-dark-cyan);
+    border:none;
+    text-align: right;
+     padding:0.4rem;
+     margin-top:0.3rem;
+   font-size: 1.5rem;
+    font-family: 700;
+    border-radius: 0.5rem;
+}
+ .error{
+    text-align: right;
+    font-size: 15px;
+    font-weight: 700;
+} 
+
+
+/* second wrap */
+ .second-wrap{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 1rem;
+    width:20rem;
+    height:20rem;
+    margin-top:1.4rem;
+    margin-left: 3rem;
+} 
+
+.tip-amount-content{
     display: flex;
-    height: 20rem;
-    border-radius: 1rem;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    padding-top:2rem;
+    gap:4rem;
 }
-.card1{
-    padding:1rem;
+
+.tip-amount{
+    line-height: 1.7;
 }
-.tip{
-    background-color:hsl(183, 100%, 15%);
-    width: 18rem;
-    height: 17rem;
-    margin-left: 4rem ;
-    margin-top:1.5rem;
+.tip-amount > h1 {
+ color:var(--White);
+ font-size:1rem;
+}
+.tip-amount > p{
+    color:var(--Dark-grayish-cyan);
+    font-size:0.7rem;
+padding-right:2em;
+    
+
+}
+
+ #tip-amount-input{
+    width:120px;
+    background-color: transparent;
+    font-size: 2rem;
+    color:var(--Strong-cyan);
+    border:none;
+    padding-left:1rem;
+    text-align:right;
+
+}
+#tip-amount-input::placeholder{
+    font-size: 2rem;
+    color: var(--Strong-cyan);
+}
+
+    
+/* total-amount */
+
+.total-person-content{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    padding-top:2rem;
+    gap:3rem;
+     
+
+
+}
+
+.total-person{
+    line-height: 1.7;
+    padding-right:2em;
+}
+.total-person > h1 {
+ color:var(--White);
+ font-size:1rem;
+}
+.total-person > p{
+    color:var(--Dark-grayish-cyan);
+    font-size:0.7rem;
+     
+    
+
+}
+
+ #total-person-input{
+    width:120px;
+    background-color: transparent;
+    font-size: 2rem;
+    color:var(--Strong-cyan);
+    border:none;
+    padding-left:0.7rem;
+    text-align:right;
+}
+#total-person-input::placeholder{
+    font-size: 2rem;
+    color: var(--Strong-cyan);
+}
+
+
+.reset-btn{
+   background-color:var(--Strong-cyan);
+   color:var(--Very-dark-cyan);
+   padding:0.6rem;
+   font-family: 700;
+   width:14rem;
+   border: none;
+   border-radius: 0.4rem;
+   margin-top:6rem;
+   margin-left: 3rem;
+
+}
+.reset-btn:hover{
+    color:var(--Very-dark-cyan);
+    background-color: var(--Light-grayish-cyan);
+    font-weight: 700;
+}
+
+
+
+
+/* Mobile Size */
+
+@media (max-width:375px){
+  
+  .main-content{
+    height:700px;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-content-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    width:100px;
+    height:70px;
+    margin-top:10rem;
+    margin-left: 7rem;
+
+}
+.container-content{
+     flex-direction: column;
+     background-color: var(--White);
+     width:23rem;
+     height:47rem; 
+    border-radius:1rem 1rem 0 0;
+    justify-content: center;
+    align-items: center;
+
+
+}
+/* bill */
+.bill_section{
+    margin-top: 2rem;
+    margin-left:1rem;
+ }
+ 
+ .bill_section > h1 {
+      color:var(--Grayish-cyan);
+      font-size: 15px;
+      font-weight: 700;
+     
+     
+ }
+ 
+  #bill_input{
+     background-color: var(--Very-light-grayish-cyan); 
+     color:var(--Very-dark-cyan);
+     border:none;
+     text-align: right;
+      padding:0.7rem;
+      margin-top:0.3rem;
+     font-size: 1,5rem;
+     font-family: 700;
+     border-radius: 0.5rem;
+     
+     
+ }
+ #bill_input[type="number"]{
+     text-align: right;
+     font-size: 1.5rem;
+     font-weight: 700;
+ }
+ #bill_input::placeholder  {
+      color:var(--Grayish-cyan);
+ }
+ .select-tip{
+    margin-top: 2rem;
+    margin-left:1rem; 
+ }
+ .select-tip-btn{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    font-size:1rem;
+    margin-top:1rem;
+    font-weight: 700;
+} 
+#customEl{
+    background-color: var(--Very-light-grayish-cyan);
+    border: none;
+    color:var(--Very-dark-cyan);
+    border-radius: .3rem;
+    padding:1rem; 
+    width:9rem;
+    font-size:1rem;
+ }
+   .fiftyPercent {
+    background-color: var(--Very-dark-cyan);
+    border: none;
+    color:var(--White);
+    border-radius: 0.3rem;
+    padding:0.7rem; 
+  
+}
+.fivePercent:hover , .tenPercent:hover , .fiftyPercent:hover, .fifteenPercent:hover , .twenty-fivePercent:hover  {
+    background-color: var(--Very-dark-cyan);
+    color:var(--Strong-cyan);
+}
+.people-content{
+    margin-top: 2rem;
+    margin-left:1rem; 
+}
+.second-wrap{
+    background-color: var(--Very-dark-cyan);
     border-radius: 1rem;
+    width:19rem;
+    height:16rem;
+    margin-top:1.4rem;
+    margin-left: 0.5rem;
+} 
+#people_input{
+    background-color: var(--Very-light-grayish-cyan); 
+    color:var(--Very-dark-cyan);
+    border:none;
+     text-align: right;
+     padding:0.4rem;
+     margin-top:0.3rem;
+    font-size: 1.5rem;
+    font-family: 700;
+    border-radius: 0.5rem;
+}
+
+
+
+.reset-btn{
+    background-color:var(--Strong-cyan);
+    color:var(--Very-dark-cyan);
+    padding:0.8rem;
+    font-family: 700;
+    width:14rem;
+    border: none;
+    border-radius: 0.4rem;
+    margin-left: 3rem;
+    font-size:1rem;
+    margin-top:2.5rem;
+ 
+ }
 
 }
